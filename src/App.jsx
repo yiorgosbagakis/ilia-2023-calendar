@@ -25,8 +25,8 @@ function App() {
   const currentYear = currentDate.getUTCFullYear();
 
   const months = [
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    "Jan ", "Feb ", "Mar ", "Apr ", "May ", "Jun ",
+    "Jul ", "Aug ", "Sep ", "Oct ", "Nov ", "Dec "
   ];
   
   return (
@@ -51,7 +51,8 @@ function App() {
                   onClick={() => handleClick(day, monthIndex)}
                   disabled={day < currentDay && monthIndex <= currentMonth}
                   style={{
-                    backgroundColor: isCurrentDay ? "#ff770a" : isSelectedDay ? "#000000" : "initial",
+                    backgroundColor: isCurrentDay ? "#ff770a" : isSelectedDay ? "#000000" : "#eee",
+                    margin: "5px",
                     color: isCurrentDay ? "initial" : isSelectedDay ? "white" : "initial",
                   }}
                 >
