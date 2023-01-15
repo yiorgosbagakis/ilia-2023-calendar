@@ -32,16 +32,8 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 .save-btn {
 margin-top: 20px;
 margin-bottom: 20px;
-
+background-color: #646cffaa;
 } 

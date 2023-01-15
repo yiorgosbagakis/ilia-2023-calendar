@@ -53,7 +53,7 @@ function App() {
                   style={{
                     backgroundColor: isCurrentDay ? "#ff770a" : isSelectedDay ? "#000000" : "#eee",
                     margin: "5px",
-                    color: isCurrentDay ? "initial" : isSelectedDay ? "white" : "initial",
+                    color: isCurrentDay ? "black" : isSelectedDay ? "white" : "black",
                   }}
                 >
                   {`${month}${day}`}
