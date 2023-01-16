@@ -35,6 +35,7 @@ function App() {
          {selectedDay && (
         <div>
           <textarea value={text} onChange={handleTextChange} /><br></br>
+          
          <button className="save-btn" onClick={handleSave}>Save</button>
         </div>
       )}
@@ -49,7 +50,7 @@ function App() {
                 <button
                   key={`${month}${day}`}
                   onClick={() => handleClick(day, monthIndex)}
-                  disabled={day < currentDay && monthIndex <= currentMonth}
+                  disabled={day > currentDay || monthIndex > currentMonth}
                   style={{
                     backgroundColor: isCurrentDay ? "#ff770a" : isSelectedDay ? "#000000" : "#eee",
                     margin: "5px",
